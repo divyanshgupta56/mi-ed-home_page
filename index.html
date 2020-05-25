@@ -9,6 +9,11 @@
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>
+		MissionEd
+
+	</title>
+	<link rel="icon" href="logo.jpg" type="image/icon type">
 </head>
 <body>
 <style type="text/css">
@@ -23,7 +28,7 @@
 }
 
 
-	.navbar {
+/*	.navbar {
     transition: all 0.4s;
 }
 
@@ -42,7 +47,7 @@
 }
 
 
-/* Change navbar styling on scroll */
+
 .navbar.active {
     background: #fff;
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
@@ -63,7 +68,7 @@
 }
 
 
-/* Change navbar styling on small viewports */
+*/
 @media (max-width: 991.98px) {
     .navbar {
         background: #fff;
@@ -291,7 +296,7 @@ a:hover {
   position: relative;
   background-color: #0c1c2c;
   color: white;
-  margin-bottom: 3rem;
+  margin-bottom: 0rem;
   z-index: 2;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
 }
@@ -1629,19 +1634,19 @@ footer .credits a {
 }
 
 
-.container {
+.container-fluid {
   position: relative;
-  width: 150%;
+  width: 100%;
 }
 
 /* Make the image responsive */
-.container img {
-  width: 150%;
+.container-fluid img {
+  width: 100%;
   
 }
 
 /* Style the button and place it in the middle of the container/image */
-.container .btn {
+.container-fluid .btn {
   position: absolute;
   top: 50%;
   left: 20%;
@@ -1656,12 +1661,13 @@ footer .credits a {
   border-radius: 5px;
 }
 
-.container .btn:hover {
+.container-fluid .btn:hover {
   background-color: white
   color:black;
 }
 
 </style>
+<!--
 <img src="headpic.jpeg" class="bg-image">
 <header class="header">
     <nav class="navbar navbar-expand-lg fixed-top py-3">
@@ -1686,6 +1692,167 @@ footer .credits a {
         </div>
     </nav>
 </header>
+--><style type="text/css">
+		
+		html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+}
+
+body {
+      font-family: "Helvetica Neue",sans-serif;
+      font-weight: lighter;
+}
+
+header {
+      width: 100%;
+      height: 100vh;
+      background: url(headpic.jpeg) no-repeat 50% 50%;
+      background-size: cover;
+}
+
+.content {
+      width: 94%;
+      margin: 4em auto;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: justify;
+}
+
+.logo {
+      line-height: 60px;
+      position: fixed;
+      float: left;
+      margin: 16px 46px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 20px;
+      letter-spacing: 2px;
+}
+
+nav {
+      position: fixed;
+      width: 100%;
+      line-height: 60px;
+}
+
+nav ul {
+      line-height: 60px;
+      list-style: none;
+      background: rgba(0, 0, 0, 0);
+      overflow: hidden;
+      color: #fff;
+      padding: 0;
+      text-align: right;
+      margin: 0;
+      padding-right: 40px;
+      transition: 1s;
+}
+
+nav.black ul {
+      background: #000;
+}
+
+nav ul li {
+      display: inline-block;
+      padding: 16px 40px;;
+}
+
+nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+}
+
+.menu-icon {
+      line-height: 60px;
+      width: 100%;
+      background: #000;
+      text-align: right;
+      box-sizing: border-box;
+      padding: 15px 24px;
+      cursor: pointer;
+      color: #fff;
+      display: none;
+}
+
+@media(max-width: 786px) {
+
+      .logo {
+            position: fixed;
+            top: 0;
+            margin-top: 16px;
+      }
+
+      .nav .ul {
+            max-height: 0px;
+            background: #C0C0C0;
+      }
+
+      .nav.black .ul {
+            background: #C0C0C0;
+      }
+
+      .showing {
+            max-height: 34em;
+      }
+
+      .nav .ul .li {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 24px;
+            text-align: center;
+      }
+
+      .menu-icon {
+            display: block;
+      }
+
+}
+
+	</style>
+	
+	<header>
+            <nav>
+               <div class="menu-icon">
+                  <i class="fa fa-bars fa-2x"></i>
+               </div>
+               <div class="logo">
+                  Mission Ed
+               </div>
+               <div class="menu">
+                  <ul>
+                     <li><a href="#">Home</a></li>
+                     <li><a href="#">Quizes</a></li>
+                     <li><a href="#">Testimonial</a></li>
+                     <li><a href="#">Contact Us</a></li>
+                     <li><a href="#">Sign up</a></li>
+                     <li><a href="#">login</a></li>
+                  </ul>
+               </div>
+            </nav>
+         </header>
+         <script type="text/javascript">
+         	 $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()>650) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+         </script>
+
 <script type="text/javascript">
 	$(function () {
     $(window).on('scroll', function () {
@@ -1710,7 +1877,7 @@ footer .credits a {
  
 
 
-<div class="container">
+<div class="container-fluid">
   <img src="our-courses.jpeg"  style="width:100%">
   <button class="btn">CLICK HERE TO KNOW MORE</button>
 </div>
@@ -1845,41 +2012,44 @@ footer .credits a {
 
 </section> 
     
-    <div class="container">
-      <div class="row"">
-        <div class="col-sm-12">
+    <div class="container-fluid" style="text-align: center;">
+    	
+      
+      	
+        
+
           <div class="contact-mf">
+          	<h2 style="text-align: center;">GET IN TOUCH</h2><br>
             <div id="contact" class="box-shadow-full">
-              <div class="row">
-                <center>
-                	<div class="col-md-6">
-                  <div class="title-box-2 pt-4 pt-md-0" style="text-align: center;">
-                    <h5 class="title-left" style=" text-align:center; color: white ";>
-                      Get in Touch
-                    </h5>
-                  </div>
+              
+                
+                	
+                  	<div class="socials" style="width: 100%">
+				        <ul>
+				            <li><a href="#" class="fa fa-facebook"></a></li>
+				            <li><a href="#" class="fa fa-linkedin"></a></li>
+				            <li><a href="#" class="fa fa-google"></a></li>
+				                      <!-- <li><a href=""><span class="ico-circle"><i class="ion-social-pinterest"></i></span></a></li> -->
+				        </ul>
+				    </div><br>
                   
-                  <div class="socials" style="width: 380px">
-                    <ul>
-                      <li><a href="#" class="fa fa-facebook"></a></li>
-                      <li><a href="#" class="fa fa-linkedin"></a></li>
-                      <li><a href="#" class="fa fa-google"></a></li>
-                      <!-- <li><a href=""><span class="ico-circle"><i class="ion-social-pinterest"></i></span></a></li> -->
-                    </ul>
-                  </div>
-                  <ul>
-                  	<li>NAME <br><i class="fa fa-phone" style="font-size:20px color:white"></i> PH.NO. <br><i class="fa fa-envelope-o" style="font-size:20px"></i>E.MAIL </li>
-                  </ul>
+				                  
+		                  
+		                  		
+		                  		<i class="fa fa-phone" style="font-size:20px color:white"></i>&nbsp 8373019619
+		               			<i class="fa fa-envelope-o" style="font-size:20px"></i>&nbsp MissionEdIIT@gmail.com 
+		                  
                   
-                </div>
+                
               </div>
-          </center>
-            </div>
-          </div>
+          
+            
+          
         </div>
       </div>
     </div>
 </div>
+
 
 
 <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
