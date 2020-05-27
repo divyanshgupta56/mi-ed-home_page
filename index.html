@@ -258,6 +258,7 @@ a:hover {
   padding: ;
   position: relative;
   background-color: #ae3234;background-color: #0c1c2c;
+  padding: 0,10px,0,10px;
   color: white;
   margin-bottom: 0rem;
   z-index: 2;
@@ -502,7 +503,7 @@ footer .credits a {
 
 @media (min-width: 768px) {
   .box-shadow-full {
-    padding: 3rem;
+    padding: 0rem;
   }
 
   .navbar-b.navbar-trans .nav-item,
@@ -958,22 +959,27 @@ footer .credits a {
 <style type="text/css">
   .navbar{
     padding-bottom: 0;
+    background-color: #E5E4E2;
   }
   .nav-item{
     font-size: 20px;
     text-decoration-color: #000000;
-    padding-bottom: 0px; 
+    
 
+  }
+  .nav-link{
+   padding-bottom: -1px;
   }
   .nav-item:hover{
     background-color: #fff;
     padding-bottom: -1px;
+
   }
 </style>
 
 <header>
 
-	<nav class="navbar navbar-expand-lg bg-light navbar-light navbar-expand-md navbar-expand-sm sticky-top">
+	<nav class="navbar navbar-expand-lg   navbar-expand-md navbar-expand-sm sticky-top">
   <a class="navbar-brand" href="#">
     <img src="logo.jpg" alt="Logo" style="width:40px;">
   </a>
