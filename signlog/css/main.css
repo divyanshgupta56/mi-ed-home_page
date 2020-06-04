@@ -12,6 +12,7 @@
 
   }
   .nav-link{
+    font-size: 25px;
    padding-bottom: -1px;
    color: black;
   }
@@ -201,6 +202,7 @@ iframe {
 
 .wrap-login100 {
   width: 960px;
+  height:600px;
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
